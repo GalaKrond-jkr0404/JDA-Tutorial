@@ -31,7 +31,7 @@ public class pbot {
             pbot bot = new pbot();
         }
         catch (LoginException e){
-            System.out.println("Error occured In Login session. did you check the token?"); /
+            System.out.println("Error occured In Login session. did you check the token?"); //r
         }
     }
 
