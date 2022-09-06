@@ -17,6 +17,7 @@ repositories {
 
 dependencies {
     implementation("net.dv8tion:JDA:$jdaVersion")
+    implementation 'io.github.cdimascio:dotenv-java:2.2.4'
 }
 
 compileJava.options.encoding = 'UTF-8'
