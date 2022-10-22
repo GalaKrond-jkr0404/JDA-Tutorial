@@ -15,7 +15,7 @@ public class pbot {
     private final ShardManager shardManager;
     private final Dotenv config;
 
-    public pbot() throws LoginException { // 잠재적으로 LoginExecption을 발생시킬 수 있다.
+    public pbot() throws LoginException { // throws - 잠재적으로 LoginExecption을 발생시킬 수 있다.
         config = Dotenv.configure().ignoreIfMissing().load();
         String token = config.get("TOKEN");
         DefaultShardManagerBuilder builder = DefaultShardManagerBuilder.createDefault(token);
