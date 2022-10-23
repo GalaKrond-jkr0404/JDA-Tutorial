@@ -25,7 +25,6 @@ public class pbot {
         builder.setActivity(Activity.watching("Galakrond"));
         shardManager = builder.build();
 
-
         // Register Listeners
         shardManager.addEventListener(new EventListener());
     }

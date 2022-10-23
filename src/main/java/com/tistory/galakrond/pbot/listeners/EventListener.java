@@ -21,7 +21,6 @@ public class EventListener extends ListenerAdapter {
         String message = user.getAsTag() + " reacted to a msg with " + emoji + "in the " + channelMention;
         event.getGuild().getDefaultChannel().asStandardGuildMessageChannel().sendMessage(message).queue();
         // 디스코드는 무조건 queue로 대기를 넣어주어야 한다!
-
     }
 
     @Override
