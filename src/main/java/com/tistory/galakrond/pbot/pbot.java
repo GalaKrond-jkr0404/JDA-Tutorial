@@ -1,6 +1,8 @@
 package com.tistory.galakrond.pbot;
 
+import com.tistory.galakrond.pbot.listeners.EventListener;
 import io.github.cdimascio.dotenv.Dotenv;
+import jdk.jfr.Event;
 import net.dv8tion.jda.api.OnlineStatus;
 import net.dv8tion.jda.api.entities.Activity;
 import net.dv8tion.jda.api.sharding.DefaultShardManager;
@@ -23,6 +25,9 @@ public class pbot {
         builder.setActivity(Activity.watching("Galakrond"));
         shardManager = builder.build();
 
+
+        // Register Listeners
+        shardManager.addEventListener(new EventListener());
     }
 
     public Dotenv getConfig(){
